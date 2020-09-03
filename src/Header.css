@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
-  background-color: #fff;
+  background-color: var(--facebook-header);
   z-index: 100;
   top: 0;
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
@@ -17,7 +17,7 @@
 .header__input {
   display: flex;
   align-items: center;
-  background-color: #eff2f5;
+  background-color: var(--facebook-input);
   padding: 10px;
   margin-left: 10px;
   border-radius: 999px;
@@ -40,19 +40,19 @@
 }
 
 .header__option > .MuiSvgIcon-root {
-  color: gray;
+  color: var(--facebook-header-option);
 }
 
 .header__option:hover > .MuiSvgIcon-root {
-  color: #2e81f4;
+  color: var(--facebook);
 }
 
 .header__option--active > .MuiSvgIcon-root {
-  color: #2e81f4;
+  color: var(--facebook);
 }
 
 .header__option--active {
-  border-bottom: 4px solid #2e81f4;
+  border-bottom: 4px solid var(--facebook);
 }
 
 .header__option {
@@ -62,8 +62,8 @@
   cursor: pointer;
 }
 
-.header__option:hover {
-  background-color: #eff2f5;
+.header__option:hover:not(.header__option--active) {
+  background-color: var(--facebook-input);
   border-radius: 10px;
   align-items: center;
   border-bottom: none;
