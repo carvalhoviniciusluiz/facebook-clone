@@ -1,5 +1,16 @@
+.app {
+  background-color: var(--facebook-background);
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+}
+
 :root {
+  --white: #fff;
   --facebook: #2e81f4;
+  --facebook-background: #f1f2f5;
   --facebook-header: #fff;
   --facebook-header-option: gray;
   --facebook-input: #eff2f5;
