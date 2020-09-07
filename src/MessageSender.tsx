@@ -39,7 +39,7 @@ const MessageSender: React.FC = () => {
         </form>
       </div>
 
-      <div className="messageSender__botton">
+      <div className="messageSender__bottom">
         <div className="messageSender__option">
           <VideocamIcon style={{ color: 'red' }} />
           <h3>Live Video</h3>

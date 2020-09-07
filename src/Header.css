@@ -17,7 +17,7 @@
 .header__input {
   display: flex;
   align-items: center;
-  background-color: var(--facebook-input);
+  background-color: var(--facebook-action);
   padding: 10px;
   margin-left: 10px;
   border-radius: 999px;
@@ -63,7 +63,7 @@
 }
 
 .header__option:hover:not(.header__option--active) {
-  background-color: var(--facebook-input);
+  background-color: var(--facebook-action);
   border-radius: 10px;
   align-items: center;
   border-bottom: none;

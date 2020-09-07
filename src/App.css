@@ -1,6 +1,5 @@
 .app {
   background-color: var(--facebook-background);
-  height: 100vh;
 }
 
 .app__body {
@@ -9,10 +8,12 @@
 
 :root {
   --white: #fff;
+  --gray: gray;
+  --lightgray: lightgray;
   --facebook: #2e81f4;
   --facebook-background: #f1f2f5;
   --facebook-header: #fff;
   --facebook-option: gray;
-  --facebook-input: #eff2f5;
+  --facebook-action: #eff2f5;
   --facebook-sidebarrow-hover: lightgray;
 }

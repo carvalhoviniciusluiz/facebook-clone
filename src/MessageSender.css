@@ -10,7 +10,7 @@
 
 .messageSender__top {
   display: flex;
-  border-bottom: 1px solid var(--facebook-input);
+  border-bottom: 1px solid var(--facebook-action);
   padding: 15px;
 }
 
@@ -25,7 +25,7 @@
   padding: 5px 20px;
   margin: 0 10px;
   border-radius: 999px;
-  background-color: var(--facebook-input);
+  background-color: var(--facebook-action);
 }
 
 /* @media (max-width: 1200px) {
@@ -42,7 +42,7 @@
   flex: 1;
 }
 
-.messageSender__botton {
+.messageSender__bottom {
   display: flex;
   justify-content: space-evenly;
 }
@@ -62,6 +62,6 @@
 }
 
 .messageSender__option:hover {
-  background-color: var(--facebook-input);
+  background-color: var(--facebook-action);
   border-radius: 20px;
 }
