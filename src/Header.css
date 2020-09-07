@@ -40,7 +40,7 @@
 }
 
 .header__option > .MuiSvgIcon-root {
-  color: var(--facebook-header-option);
+  color: var(--facebook-option);
 }
 
 .header__option:hover > .MuiSvgIcon-root {
