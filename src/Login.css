@@ -1,0 +1,36 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login > button {
+  width: 300px;
+  background-color: var(--facebook);
+  color: var(--facebook-action);
+  font-weight: 800;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.login > button:hover {
+  background-color: var(--while);
+  color: var(--facebook);
+  border: 1px solid var(--facebook);
+}
+
+.login > button:focus {
+  outline:0;
+}
+
+.login > div > img {
+  object-fit: contain;
+  height: 150px;
+}
+
+.login > div {
+  display: flex;
+  flex-direction: column;
+}

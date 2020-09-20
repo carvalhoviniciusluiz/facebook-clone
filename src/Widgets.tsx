@@ -11,7 +11,6 @@ const Widgets: React.FC = () => {
         style={{ border: 'none', overflow: 'hidden' }}
         scrolling="no"
         frameBorder="none"
-        allowTransparency
         allow="encrypted-media"
       ></iframe>
     </div>
