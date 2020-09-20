@@ -26,7 +26,7 @@
 
 This project simulates the functioning of the facebook posts page, a project under development
 
-![Captura de Tela 2020-09-07 às 17 01 00](https://user-images.githubusercontent.com/22005684/92414704-cfc67900-f12b-11ea-8985-0c2f2be4b0cd.png)
+![Captura de Tela 2020-09-20 às 18 05 11](https://user-images.githubusercontent.com/22005684/93722279-f93fc580-fb6b-11ea-8eae-3e6893e60fdf.png)
 
 ## :loop: How it works
 
