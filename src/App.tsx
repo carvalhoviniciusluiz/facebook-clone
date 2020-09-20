@@ -7,7 +7,7 @@ import Widgets from './Widgets';
 import Login from './Login';
 
 function App() {
-  const user = null;
+  const user = 'vinicius.luiz.568'; // << my personal facebook..
   return (
     <div className="app">
       {!user ? <Login /> : (

@@ -1,9 +1,16 @@
 import React from 'react';
 import './Login.css';
+import { auth, provider } from './firebase';
 
 const Login: React.FC = () => {
   const signIn = () => {
     // sign in...
+    auth
+      .signInWithPopup(provider)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => alert(error.message));
   }
 
   return (
