@@ -5,6 +5,8 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { useStateValue } from './StateProvider';
+import db from './firebase';
+import firebase from 'firebase';
 
 const MessageSender: React.FC = () => {
   const [state] = useStateValue();
@@ -13,6 +15,14 @@ const MessageSender: React.FC = () => {
 
   function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
+
+    db.collection('posts').add({
+      message: input,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      profilePic: state.user.photoURL,
+      username: state.user.displayName,
+      image: imageUrl,
+    })
 
     setInput('');
     setImageUrl('');
@@ -35,7 +45,7 @@ const MessageSender: React.FC = () => {
             placeholder="image URL (Optional)"
           />
 
-          <button onClick={handleSubmit} type="button">
+          <button onClick={handleSubmit} type="submit">
             Hidden Submit
           </button>
         </form>
