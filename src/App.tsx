@@ -5,12 +5,14 @@ import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Widgets from './Widgets';
 import Login from './Login';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  const user = 'vinicius.luiz.568'; // << my personal facebook..
+  const [state] = useStateValue();
+
   return (
     <div className="app">
-      {!user ? <Login /> : (
+      {!state.user ? <Login /> : (
         <>
           <Header />
 
