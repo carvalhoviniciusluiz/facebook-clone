@@ -12,8 +12,11 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { useStateValue } from './StateProvider';
 
 const Header: React.FC = () => {
+  const [state] = useStateValue();
+
   return <div className="header">
     <div className="header__left">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="" />
@@ -43,8 +46,8 @@ const Header: React.FC = () => {
 
     <div className="header__right">
       <div className="header__info">
-        <Avatar />
-        <h4>vinicius carvalho</h4>
+        <Avatar src={state.user.photoURL} />
+        <h4>{state.user.displayName}</h4>
 
         <IconButton>
           <AddIcon />

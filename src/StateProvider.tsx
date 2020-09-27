@@ -2,11 +2,10 @@ import React, { createContext, useReducer, useContext } from 'react';
 import { Action } from './types/Action';
 import { State } from './types/State';
 
-type Context = any;
-export const StateContext = createContext<Context>(null);
+export const StateContext = createContext<any>(null);
 
 interface Provider {
-  reducer: (prevState: State, action: Action) => any;
+  reducer: (prevState: State, action: Action) => State;
   initialState: State;
   children: React.ReactNode;
 }

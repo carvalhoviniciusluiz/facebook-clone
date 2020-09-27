@@ -9,10 +9,13 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import { ExpandMoreOutlined } from '@material-ui/icons';
+import { useStateValue } from './StateProvider';
 
 const Sidebar: React.FC = () => {
+  const [state] = useStateValue();
+
   return <div className="sidebar">
-    <SidebarRow src="https://avatars0.githubusercontent.com/u/22005684?s=460&u=b950a6cf4e12e66a7187f33407abb88389e5250d&v=4" title="Vinicius Carvalho" />
+    <SidebarRow src={state.user.photoURL}  title={state.user.displayName}  />
     <SidebarRow icon={LocalHospitalIcon} title="COVID-19 Information Center" />
     <SidebarRow icon={EmojiFlagsIcon} title="Pages" />
     <SidebarRow icon={PeopleIcon} title="Friends" />
